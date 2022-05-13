@@ -1,0 +1,25 @@
+.navigation_menu {
+	.nav_menu_trigger {
+		position: relative;
+		margin-top: 22px;
+		.menu_image {
+			width: 30px;
+			height: 30px;
+		}
+		.menu_list {
+			top: 20px;
+			display: none;
+			padding: 5px;
+			width: 120px;
+			position: relative;
+			margin-top: -2px;
+			z-index: 5 !important;
+			background: linear-gradient(120deg, #2c3339 2%, #222328 92%);
+		}
+	}
+	.nav_menu_trigger:hover {
+		.menu_list {
+			display: block;
+		}
+	}
+}
