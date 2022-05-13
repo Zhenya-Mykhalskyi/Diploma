@@ -8,10 +8,10 @@ const Footer =(props) => {
         <div class="footer-section">
         <div class="footer">
             <div class="footer-item footer-item-displayd footer-item-refs footer-item-1">
-                <a href="#">Новини</a>
+            <NavLink to='/student'>Студенту</NavLink>
                 <a href="#">Про нас</a>
                 {/* <a href="applicant.html">Абітуріенту</a> */}
-                {/* <NavLink to='/applicant'>Profile</NavLink> */}
+                <NavLink to='/applicant'>Абітурієнту</NavLink>
             </div>
             <div class="footer-item footer-item-2">
                 <a href="https://www.facebook.com/tktntu/">

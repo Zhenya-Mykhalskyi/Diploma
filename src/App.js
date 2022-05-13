@@ -2,20 +2,20 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Main from './components/Main/Main';
-
-
+import Applicant from './components/Applicant/Applicant';
+import Student from './components/Student/Student';
 
 
 const App = () => {
   return (
    <div>
      <Main />
-     <div>
-     {/* <Routes>
-        <Route path='/dialogs/*' element= {<Dialogs/>}/>
-        <Route path='/profile' element={<Profile/>}/>
-     </Routes> */}
-     </div>
+     
+     <Routes>
+        <Route path='/applicant/' element= {<Applicant/>}/>
+        <Route path='/student/' element={<Student/>}/>
+     </Routes>
+     
   </div>
 
   );

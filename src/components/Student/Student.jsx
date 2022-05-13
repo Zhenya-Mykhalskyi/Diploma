@@ -5,7 +5,7 @@ import './Student.scss';
 
 const Student =(props) => {
     return (
-       <div>Applicant</div>
+       <div>Student page</div>
     )
 }
 
