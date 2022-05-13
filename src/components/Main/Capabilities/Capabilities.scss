@@ -1,0 +1,199 @@
+@mixin lang-blocks ($height, $width){
+  height: $height;
+  width: $width;
+}
+@mixin flex-direction($direction){
+  display: flex;
+  flex-direction: $direction;
+}
+@mixin set-font-size-weight($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin set-block-size($height, $width){
+  height: $height;
+  width: $width;
+}
+
+$black-color: #565656;
+$black-color57: #575757;
+$white-color: #f3f3f3;
+$mi-border: 1px solid red;
+$my-border: 1px solid green;
+$me-border: 1px solid blue;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+border: none;
+outline: none;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.capabilities{
+  background: linear-gradient(90deg, #000000 0%, #001114 0%, #000607 0%, #001418 73.44%);
+  padding-bottom: 210px;
+  padding-top: 170px;
+}
+
+.capabilities-title-intro{
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.capabilities-title{
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 1.39;
+  letter-spacing: 5.08px;
+}
+
+.capabilities-intro{
+    max-width: 700px;
+    margin: auto;
+    height: 118px;
+    flex-grow: 0;
+    margin-top: 13px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.36;
+    letter-spacing: 0.84px;
+}
+
+
+
+.goals{
+	display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+	margin-top: 80px;
+  color: #ffffff;
+}
+
+
+.goaltitle{
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.39;
+  letter-spacing: 3.63px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+
+.goalintro-text{
+  height: 280px;
+  flex-grow: 0;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.39;
+  letter-spacing: 3.05px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 74px;
+}
+
+.pongtext{
+  width: 153px;
+  margin: 0 auto;
+}
+
+.traveltext{
+  width: 234px;
+  margin: 0 auto;
+}
+
+
+
+.goal{
+	width:305px;
+  height: 280px;
+	text-align: center;
+}
+
+
+
+// ADAPTIVE
+
+@media screen and (max-width: 1170px) {
+
+  .container{
+		width: 960px;
+	}
+
+  .goal-img{
+    width: 92%;
+    height: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+  
+  .container{
+		width: 720px;
+	}
+
+  .capabilities-title{
+  font-size: 30px;
+  }
+
+  .capabilities-intro{
+    font-size: 17px;
+  }
+
+  .goaltitle{
+    font-size: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .container{
+    width: 540px;
+  }
+
+
+  .goals{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .goal{
+    margin-bottom: 100px;
+  }
+
+  .capabilities{
+    padding-bottom: 50px;
+  }
+
+  
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+  
+
+  .container{
+    width: 305px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .container{
+    width: 90%;
+    }
+}

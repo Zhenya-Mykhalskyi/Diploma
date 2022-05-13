@@ -1,0 +1,197 @@
+.footer-section{
+    min-height: 300px;
+    width: 100%;
+    background-color: #000;
+   .footer{
+       padding-top: 60px;
+       padding-bottom: 30px;
+       width: 1170px;
+       margin: 0px auto 0px auto;
+       display: grid;
+       grid-template-columns: repeat(3, 388px);
+       grid-template-rows: 130px 130px;
+       grid-gap: 1px;
+       grid-template-areas: 
+       "i1 i2 i3"
+       "i4 i5 i6";
+       .footer-item{
+           border-radius: 6px;
+           text-align: center;
+           color: #c6c6c6;
+           font-stretch: normal;
+           font-style: normal;
+           a{
+               margin-top: 20px;
+               text-decoration: none;
+                color: #c6c6c6;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.23;
+                letter-spacing: 1.08px;
+            }
+            a:nth-child(1){
+                margin: 0;
+            }
+            a:hover{
+                color: #ffffff;
+                text-decoration: underline 2px #ffffff;
+            }
+           label{
+               font-size: 12px;
+               font-weight: normal;
+            //    font-family: Montserrat;
+               line-height: 1.9;
+               letter-spacing: 1.04px;
+               color: #c6c6c6;
+            }
+        }
+        .footer-item-1{
+            grid-area: i1;
+        }
+        .footer-item-2{
+            grid-area: i2;
+            display: flex;
+            flex-direction: column;
+            a{
+                img:hover{
+                    position: relative;
+                    top: -5px;
+                }
+            }
+        }
+        .footer-item-3{
+            grid-area: i3;
+        }
+        .footer-item-4{
+            grid-area: i4;
+            padding-left: 120px;
+        }
+        .footer-item-5{
+            grid-area: i5;
+            padding-top: 60px;
+            img{
+                zoom: 1.5;
+            }
+        }
+        .footer-item-6{
+            grid-area: i6;
+        }
+        .footer-item-displayd{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-item-4, .footer-item-6{
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
+
+
+// ADAPTIVE
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1170px){
+    .footer-section{
+        .footer{
+            width: 992px;
+            grid-template-columns:repeat(3, 327px);
+            grid-template-rows: 130px 150px;
+            .footer-item-4,  .footer-item-6{
+                padding-left: 0px;
+            }
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .footer-section{
+        .footer{
+            width: 768px;
+            grid-template-columns:repeat(3, 253px);
+            .footer-item-4{
+                padding-left: 50px;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .footer-section{
+        height: 630px;
+        .footer{
+            width: 576px;
+            grid-template-columns:repeat(2, 280px);
+            grid-template-rows: repeat(3, 130px) 70px 70px;
+            grid-template-areas: 
+            "i1 i3"
+            "i2 i2"
+            "i5 i5"
+            "i6 i6"
+            "i4 i4";
+        }
+        .footer-item-5{
+            padding-top: 30px !important;
+        }
+        .footer-item-4{
+            label{
+                padding-left: 145px;
+            }
+        }
+    }   
+}
+@media screen and (max-width:576px){
+    .footer-section{
+        height: 630px;
+        .footer{
+            padding-top: 30px;
+            width: 480px;
+            grid-template-columns:repeat(2, 238px);
+            grid-template-rows: repeat(3, 130px) 70px 70px;
+            grid-template-areas: 
+            "i1 i3"
+            "i2 i2"
+            "i5 i5"
+            "i6 i6"
+            "i4 i4";
+        }
+        .footer-item-5{
+            padding-top: 40px;
+        }
+        .footer-item-4{
+            label{
+                padding-left: 110px;
+            }
+        }
+    }   
+}
+@media screen and (max-width:480px){
+    .footer-section{
+        height: 750px;
+        .footer{
+            padding-top: 20px;
+            width: 320px;
+            grid-template-columns:320px;
+            grid-template-rows: repeat(4, 130px) 70px 70px;
+            grid-template-areas: 
+            "i1"
+            "i3"
+            "i2"
+            "i5"
+            "i6"
+            "i4";
+        }
+        .footer-item-5{
+            padding-top: 40px;
+        }
+        .footer-item-4{
+            label{
+                padding-left: 110px;
+            }
+        }
+    }   
+}

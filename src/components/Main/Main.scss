@@ -1,0 +1,32 @@
+@mixin lang-blocks ($height, $width){
+  height: $height;
+  width: $width;
+}
+@mixin flex-direction($direction){
+  display: flex;
+  flex-direction: $direction;
+}
+@mixin set-font-size-weight($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin set-block-size($height, $width){
+  height: $height;
+  width: $width;
+}
+
+$black-color: #565656;
+$black-color57: #575757;
+$white-color: #f3f3f3;
+$mi-border: 1px solid red;
+$my-border: 1px solid green;
+$me-border: 1px solid blue;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+border: none;
+outline: none;
+}
