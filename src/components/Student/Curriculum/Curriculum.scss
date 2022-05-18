@@ -1,0 +1,115 @@
+@mixin set-size-weight($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+
+
+
+
+.curriculum-section{
+  .curriculum{
+      margin: 0px auto 0px auto;
+      width: 772px;
+      display: grid;
+      grid-template-columns: 770px;
+      grid-gap: 20px;
+      &-title{
+          @include set-size-weight(40px, bold);
+          color: #ffffff;
+          margin-top: 150px;
+          text-align: center;
+          letter-spacing: 2.04px;
+      }
+      &-underline{
+          hr{
+              margin: 0px auto;
+              background-image: linear-gradient(to right, #0fc1f9, #ffffff);
+              height: 4px;
+              width: 766px;
+          }
+      }
+      &-image{
+          margin-top: 100px;
+          padding-bottom: 100px;
+          .small-img{
+              display: none;
+          }
+      }
+  }
+}
+
+
+
+// ADAPTIVE
+
+
+@media screen and (max-width: 1170px){
+  .curriculum-section{
+      .curriculum{
+          width: 570px;
+          grid-template-columns: 570px;
+          &-title{
+              width: 570px;
+          }
+          &-underline{
+              width: 570px;
+              hr{
+                  width: 570px;
+              }
+          }
+          &-image{
+              width: 570px;
+              padding-bottom: 50px;
+              .small-img{
+                  margin: auto;
+                  display: block;
+              }
+              .big-img{
+                  display:none;
+              }
+          }
+      }
+  }
+}
+@media screen and (max-width:576px){
+  .curriculum-section{
+      .curriculum{
+          width: 478px;
+          grid-template-columns: 478px;
+          &-title{
+              margin-top: 50px;
+              width: 480px;
+          }
+          &-underline{
+              width: 480px;
+              hr{
+                  width: 480px;
+              }
+          }
+          &-image{
+              margin-top: 35px;
+              width: 480px;
+          }
+      }
+  }
+}
+@media screen and (max-width:480px) and (min-width:320px){
+  .curriculum-section{
+      .curriculum{
+          width: 320px;
+          grid-template-columns: 320px;
+          &-title{
+              width: 320px;
+          }
+          &-underline{
+              width: 320px;
+              hr{
+                  width: 320px;
+              }
+          }
+          &-image{
+              width: 320px;
+          }
+      }
+  }
+}

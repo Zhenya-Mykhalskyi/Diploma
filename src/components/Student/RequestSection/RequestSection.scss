@@ -1,0 +1,103 @@
+@mixin set-size-weight($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+
+
+.request-topics-section{
+    background-color: #002831;
+    .form{
+        padding-top: 50px;
+        margin: 0px auto 0px auto;
+        width: 575px;
+        text-align: center;
+        padding-bottom: 70px;
+        .this-title{
+            @include set-size-weight(20px, 800);
+            color: #ffffff;
+            line-height: 1.23;
+            letter-spacing: 2.9px;
+            text-align: center;
+        }
+        .input-year{
+            text-align: center;
+            margin-top: 50px;
+            >input{
+                border-radius: 10px;
+                outline: none;
+                width: 370px;
+                height: 45px;
+                @include set-size-weight(22px, 400);
+                padding-left: 20px;
+                border: none;
+                background-color: #575859;
+            }
+            >input:focus{
+                background-color: #c4c4c4;
+            }
+            .form-input:placeholder-shown{
+                @include set-size-weight(20px, 400);
+                letter-spacing: 2.9px;
+                color: #000000;
+            }
+            .form-input::placeholder{
+                color: #000000;
+            }
+        }
+        .submit-btn{
+            margin-top: 25px;
+            background-image: linear-gradient(to right, #0080a8, #032436);
+            color: #ffffff;
+            @include set-size-weight(20px, 800);
+            line-height: 1.23;
+            letter-spacing: 2.9px;
+            width: 370px;
+            height: 65px;
+            border-radius: 10px;
+            border: none;
+        }
+        .submit-btn:hover {
+            background: #000000;
+            color: #fff;
+            box-shadow: 0 -2px 20px 14px rgba(27, 27, 27, 0.15);
+            cursor: pointer;
+        }
+    }
+}
+
+
+// ADAPTIVE
+
+
+@media screen and (max-width: 1170px){
+  
+}
+@media screen and (max-width:992px){
+
+}
+@media screen and (max-width:768px){
+
+}
+@media screen and (max-width:576px){
+    .request-topics-section{
+        .form{
+            width: 480px;
+        }
+    }
+}
+@media screen and (max-width:480px) and (min-width:320px){
+    .request-topics-section{
+        .form{
+            width: 100%;
+            .input-year{
+                width: 100%;
+                >input{
+                    width: 94%;
+                }
+            }
+            .submit-btn{
+                width: 94%;
+            }
+        }
+    }
+}

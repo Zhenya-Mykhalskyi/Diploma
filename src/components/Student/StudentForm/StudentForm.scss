@@ -1,0 +1,222 @@
+@mixin set-size-weight($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+
+.student-form-section{
+    background-color: #000000;
+    .form-of-diploma-works{
+        padding-top: 50px;
+        width: 1170px;
+        margin: 0px auto 0px auto;
+        display: grid;
+        grid-template-columns: 720px 450px;
+        grid-template-rows: 200px 200px 200px 500px;
+        grid-template-areas: 
+        "title title"
+        "forma contacts"
+        "forma ."
+        "forma .";
+        .form-title{
+            grid-area: title;
+            @include set-size-weight(32px, 600);
+            text-align: center;
+            padding-top: 90px;
+            color: #ffffff;
+            line-height: 1.23;
+            letter-spacing: 4.64px;
+        }
+        .forma{
+            padding-left: 12px;
+            grid-area: forma;
+            display: flex;
+            flex-direction: column;
+            >input{
+                border-radius: 10px;
+                outline: none;
+                width: 700px;
+                height: 69px;
+                @include set-size-weight(22px, 400);
+                padding-left: 20px;
+                border: none;
+            }
+            >input{
+                margin-top: 50px;
+                background-color: #575859;
+            }
+            >input:focus{
+                background-color: #c4c4c4;
+            }
+            .form-input:placeholder-shown{
+                @include set-size-weight(20px, 400);
+                letter-spacing: 2.9px;
+                color: #000000;
+            }
+            .form-input::placeholder{
+                color: #000000;
+            }
+            .submit-button{
+                background-image: linear-gradient(to right, #0080a8, #032436);
+                color: #ffffff;
+                @include set-size-weight(20px, 800);
+                line-height: 1.23;
+                letter-spacing: 2.9px;
+            }
+            .submit-button:hover {
+                background: #032436;
+                color: #ffffff;
+                box-shadow: 0 -2px 20px 14px rgba(27, 27, 27, 0.15);
+                cursor: pointer;
+            }
+            .check-the-policy{
+                display: flex;
+                flex-direction: row;
+                padding-top: 20px;
+                >input{
+                    cursor: pointer;
+                }
+                div{
+                    margin-left: 30px;
+                    @include set-size-weight(15px, 800);
+                    color: #ffffff;
+                    line-height: 1.23;
+                    letter-spacing: 2.1px;
+                    a{
+                        text-decoration: underline #ffffff solid 2px;
+                        margin-left: 4px;
+                        background-color: #000000;
+                        @include set-size-weight(15px, 800);
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .our-contacts{
+            padding-top: 50px;
+            grid-area: contacts;
+            >*{
+                padding-left: 50px;
+            }
+            &-title{
+                color: #17b9b9;
+                @include set-size-weight(20px, 600);
+                line-height: 1.23;
+                letter-spacing: 2.9px;   
+                font-weight: 800;
+                font-size: 22px;
+            }
+            &-text{
+                margin-top: 30px;
+                .contacts-text-item{
+                    display: flex;
+                    flex-direction: row;
+                    img{
+                        margin-top: 5px;
+                    }
+                    div{
+                        padding-left: 10px;
+                        font-family: "Montserrat", sans-serif;
+                        line-height: 1.4;
+                        letter-spacing: 2.9px;
+                        color: #ffffff;
+                        @include set-size-weight(20px, 600);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// ADAPTIVE
+
+@media screen and (max-width: 1170px){
+    .student-form-section{
+        .form-of-diploma-works{
+            width: 725px;
+            grid-template-columns: 720px;
+            grid-template-rows: 200px 770px 200px;
+            grid-template-areas: 
+            "title"
+            "forma"
+            "contacts";
+        }
+        .our-contacts{
+            padding-top: 20px !important;
+        }
+    }
+}
+@media screen and (max-width:992px){
+
+}
+
+@media screen and (max-width:768px){
+    .student-form-section{
+        .form-of-diploma-works{
+            padding-top: 0px;
+            width: 574px;
+            grid-template-columns: 572px;
+            grid-template-rows: 200px 770px 200px;
+            grid-template-areas: 
+            "title"
+            "forma"
+            "contacts";
+            .forma{
+                >input{
+                    width: 540px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .student-form-section{
+        .form-of-diploma-works{
+            padding-top: 0px;
+            width: 490px;
+            grid-template-columns: 478px;
+            grid-template-rows: 150px 770px 200px;
+            grid-template-areas: 
+            "title"
+            "forma"
+            "contacts";
+            .form-title{
+                padding-top: 60px;
+                font-size: 26px;
+            }
+            .forma{
+                >input{
+                    width: 460px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px) and (min-width:320px){
+    .student-form-section{
+        .form-of-diploma-works{
+            padding-top: 0px;
+            width: 320px;
+            grid-template-columns: 320px;
+            grid-template-rows: 150px 600px 200px;
+            grid-template-areas: 
+            "title"
+            "forma"
+            "contacts";
+            .form-title{
+                padding-top: 60px;
+                font-size: 26px;
+            }
+            .forma{
+                >input{
+                    width: 94%;
+                    height: 50px;
+                }
+                >input:not(:first-child){
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
