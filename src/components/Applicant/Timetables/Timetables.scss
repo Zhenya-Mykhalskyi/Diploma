@@ -1,0 +1,117 @@
+
+
+.timetables {
+    background-image: url('../../../../public/Images/ApplicantImages/applicantBackground.jpg');
+    width: 100%;
+    display: block;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  
+  .timetables-refs {
+    padding-top: 120px;
+    width: 768px;
+    margin: 0px auto 0px auto;
+    display: grid;
+    grid-template-columns: 768px;
+    grid-gap: 60px;
+  }
+  .timetables-refs .refs-item {
+    text-align: center;
+    border-radius: 17px;
+    box-shadow: 0 22px 57px 1px #1e1e1e;
+    background-image: linear-gradient(to right, #0080a8, #032436);
+    /* height: 60px; */
+    line-height: 1.39;
+    color: #f6f6f6;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    width: 760px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+  }
+  /* Button */
+  .timetables-refs .refs-item:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 150px;
+    width: 30px;
+    position: absolute;
+    top: -8px;
+    left: -100px;
+    transform: skewX(-45deg);
+  }
+  .timetables-refs .refs-item:hover {
+    background: #000000;
+    color: #fff;
+    box-shadow: 0 -2px 20px 14px rgba(27, 27, 27, 0.15)
+  }
+  .timetables-refs .refs-item:hover:before {
+    left: 750px;
+    transition: .5s ease-in-out;
+  }
+  
+  /* APAPTIVE */
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  @media screen and (max-width: 992px) {
+    .timetables-refs {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .timetables-refs .refs-item {
+      margin: auto;
+      width: 650px;
+    }  
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .timetables-refs {
+      width: 100%;
+    }
+    .timetables-refs .refs-item {
+      margin: auto;
+      width: 90%;
+    }
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 576px) {
+    .timetables-refs .refs-item {
+      margin: auto;
+      width: 90%;
+    }
+
+    .timetables{
+        height: 640px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) and (min-width: 320px) {
+    .timetables-refs {
+      padding-top: 90px;
+      grid-gap: 40px;
+  }
+}
+  
+  
+  
+  
+  /*# sourceMappingURL=student-adaptive.css.map */
+  

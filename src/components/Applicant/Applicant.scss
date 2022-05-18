@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background-color: #001e25;
+  }
+  
+  .student-title {
+    padding-top: 20px;
+    width: 100%;
+    height: 95px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+    box-shadow: 0 22px 57px 1px #1e1e1e;
+    background-image: linear-gradient(to top, #1c1c1d, #001e25);
+  }
