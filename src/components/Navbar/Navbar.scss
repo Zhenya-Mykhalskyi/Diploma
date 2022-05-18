@@ -62,11 +62,13 @@
 			grid-area: contacts;
 			display: flex;
 			flex-direction: row;
+			margin-top: 2px;
 			div {
 				margin-left: 7px;
 				margin-top: 26px;
-				font-size: 12px;
+				font-size: 13px;
 				font-weight: bold;
+				
 			}
 			img {
 				margin-left: 5px;

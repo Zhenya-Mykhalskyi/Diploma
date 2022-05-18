@@ -5,7 +5,6 @@ import './Menu.scss';
 
 const menuLinks = [
 	{ link: 'main', linkName: 'Головна' },
-	{ link: 'news', linkName: 'Новини' },
 	{ link: 'student', linkName: 'Студенту' },
 	{ link: 'abiturient', linkName: 'Абітуріенту' },
 	{ link: 'about', linkName: 'Про нас' },
@@ -32,22 +31,25 @@ const Menu = () => {
 	}, [location]);
 
 	return (
-		<div className='navigation_menu'>
-			<div className='nav_menu_trigger'>
-				<div>
-					<img src={menu_img} alt='' className='menu_image' />
-				</div>
-				<div class='menu_list'>
-					{menuLinks.map(link => (
-						<NavMenuLink
-							key={link.link}
-							isActive={currentRoute === link.link ? true : false}
-							link={link}
-						/>
-					))}
+		<div className='menu'>
+			<div className='navigation_menu'>
+				<div className='nav_menu_trigger'>
+					<div>
+						<img src={menu_img} alt='' className='menu_image' />
+					</div>
+					<div class='menu_list'>
+						{menuLinks.map(link => (
+							<NavMenuLink
+								key={link.link}
+								isActive={currentRoute === link.link ? true : false}
+								link={link}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
+
 	);
 };
 

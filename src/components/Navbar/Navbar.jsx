@@ -25,8 +25,10 @@ const Navbar = props => {
 					/>
 					<div class='contact-number'>+38 0352 28 19 66</div>
 				</div>
-
-				<Menu />
+				<div className='nav-menu'>
+					<Menu />
+				</div>
+				
 			</nav>
 		</section>
 	);

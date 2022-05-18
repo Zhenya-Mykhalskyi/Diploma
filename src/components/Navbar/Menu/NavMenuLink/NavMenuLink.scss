@@ -1,19 +1,21 @@
 .nav_menu_link {
 	list-style-type: none;
-	font-size: 16px;
-
+	font-size: 25px;
 	color: #ffffff;
 	font-weight: 600;
 	text-decoration: none;
 	cursor: pointer;
+	padding-bottom: 5px;
+	padding-left: 15px;
 }
 
-.nav_menu_link :hover {
-	text-decoration: underline 2px #17b9b9;
-	color: #17b9b9;
+
+.nav_menu_link:hover {
+	// color: #17b9b9;
+	background-color: #17b9b9;
 }
 
 .active_nav_link {
-	color: yellow;
-	font-weight: 500;
+	background-color: #17b9b9;
+	font-weight: 600;
 }
