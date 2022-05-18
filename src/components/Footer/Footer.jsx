@@ -29,7 +29,7 @@ const Footer = (props) => {
                     <label for="">2022 ВСП "ТФК ТНТУ»</label>
                 </div>
                 <div class="footer-item footer-item-5">
-                    <a href="index.html"><img src="Images\menu\navlogo.png" alt="" /></a>
+                    <NavLink to =  '/'><img src="Images\menu\navlogo.png" /></NavLink>
                 </div>
                 <div class="footer-item footer-item-label footer-item-6">
                     <label for="">© Designed and implemented by Yevhenii Mykhalskyi</label>

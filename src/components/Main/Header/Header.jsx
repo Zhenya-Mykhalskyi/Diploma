@@ -12,9 +12,7 @@ const Header = (props) => {
                     <h1 class="title">Комп'ютерні науки</h1>
                     <p class="intro">Спеціальність, яка дозволить тобі здобути професію мрії. Вступай у ВСП «ТФК ТНТУ» та розкривай свій потенціал!
                     </p>
-                    <div className="btn">
-                        <NavLink to='/abiturient'>Абітурієнту</NavLink>
-                    </div>
+                    <NavLink to='/abiturient' className="btn">Абітурієнту</NavLink>
                 </div>
             </div>
         </div>
