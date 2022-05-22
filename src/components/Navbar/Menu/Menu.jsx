@@ -7,7 +7,7 @@ const menuLinks = [
 	{ link: 'main', linkName: 'Головна' },
 	{ link: 'student', linkName: 'Студенту' },
 	{ link: 'abiturient', linkName: 'Абітуріенту' },
-	{ link: 'about', linkName: 'Про нас' },
+	// { link: 'about', linkName: 'Про нас' },
 	{ link: 'contacts', linkName: 'Контакти' },
 ];
 

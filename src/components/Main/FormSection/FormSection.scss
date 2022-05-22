@@ -96,6 +96,7 @@
   
   .checkbox-label{
     flex-grow: 0;
+    margin-left: 10px;
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 800;
@@ -119,13 +120,15 @@
     font-weight: 800;
     line-height: 1.23;
     letter-spacing: 2.9px;
-    color: #000000;
+    color: #ffffff;
     border: none;
   }
   
   .form-button:hover{
-   color:#f1f1f1;
-   background: linear-gradient(90.44deg, #000000 2.1%, #000000 96.67%);
+    background: #032436;
+    color: #ffffff;
+    box-shadow: 0 -2px 20px 14px rgba(27, 27, 27, 0.15);
+    cursor: pointer;
   }
   
   .cheackbox-div a{

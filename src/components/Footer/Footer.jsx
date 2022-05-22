@@ -8,7 +8,8 @@ const Footer = (props) => {
         <div class="footer-section">
             <div class="footer">
                 <div class="footer-item footer-item-displayd footer-item-refs footer-item-1">
-                    <NavLink to='/about'>Про нас</NavLink>
+                    {/* <NavLink to='/about'>Про нас</NavLink> */}
+                    <NavLink to='/'>Головна</NavLink>
                     <NavLink to='/student'>Студенту</NavLink>
                     <NavLink to='/abiturient'>Абітурієнту</NavLink>
                 </div>
