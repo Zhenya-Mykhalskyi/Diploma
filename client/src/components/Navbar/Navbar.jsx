@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from './Menu/Menu';
 import './Navbar.scss';
 
-const Navbar = props => {
+const Navbar = () => {
 	return (
 		<section class='nav-section'>
 			<nav class='nav'>
@@ -28,7 +28,6 @@ const Navbar = props => {
 				<div className='nav-menu'>
 					<Menu />
 				</div>
-				
 			</nav>
 		</section>
 	);

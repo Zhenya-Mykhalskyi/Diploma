@@ -15,7 +15,10 @@ const menu_img = process.env.PUBLIC_URL + '/Images/menu/menu.png';
 
 const Menu = () => {
 	const [currentRoute, setCurrentRoute] = useState('');
+	const [dropDownOpen, setDropDownOpen] = useState(false);
 	const location = useLocation();
+
+	const dropDownOpenToggle = () => setDropDownOpen(dropDownOpen => !dropDownOpen);
 
 	const checkActiveRoute = () => {
 		if (location.pathname === '/') {
@@ -25,6 +28,11 @@ const Menu = () => {
 			setCurrentRoute(thisRoute);
 		}
 	};
+	console.log(dropDownOpen);
+
+	useEffect(() => {
+		document.title = currentRoute;
+	}, [currentRoute]);
 
 	useEffect(() => {
 		checkActiveRoute();
@@ -35,21 +43,30 @@ const Menu = () => {
 			<div className='navigation_menu'>
 				<div className='nav_menu_trigger'>
 					<div>
-						<img src={menu_img} alt='' className='menu_image' />
+						<img
+							onClick={dropDownOpenToggle}
+							src={menu_img}
+							alt=''
+							className='menu_image'
+						/>
 					</div>
-					<div class='menu_list'>
-						{menuLinks.map(link => (
-							<NavMenuLink
-								key={link.link}
-								isActive={currentRoute === link.link ? true : false}
-								link={link}
-							/>
-						))}
-					</div>
+					{dropDownOpen ? (
+						<div class='menu_list'>
+							{menuLinks.map(link => (
+								<NavMenuLink
+									key={link.link}
+									isActive={currentRoute === link.link ? true : false}
+									link={link}
+									setDropDownOpen={setDropDownOpen}
+								/>
+							))}
+						</div>
+					) : (
+						''
+					)}
 				</div>
 			</div>
 		</div>
-
 	);
 };
 

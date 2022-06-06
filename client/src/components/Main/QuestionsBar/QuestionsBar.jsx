@@ -1,12 +1,17 @@
-import React from "react";
-import './QuestionsBar.scss'
+import React from 'react';
+import { QuestionsConstants } from '../../../constants';
+import QuestionItem from '../../QuestionItem/QuestionItem';
+import './QuestionsBar.scss';
 
-const QuestionsBar = (props) =>{
-    return (
-        <section class="questions-bar-section">
-            <div class="question-bar wow fadeInUp" data-wow-duration="2s">
-                <div class="question-bar-title">Найпоширеніші запитання:</div>
-                <div class="question-item">
+const QuestionsBar = () => {
+	return (
+		<section class='questions-bar-section'>
+			<div class='question-bar wow fadeInUp' data-wow-duration='2s'>
+				<div class='question-bar-title'>Найпоширеніші запитання:</div>
+				{QuestionsConstants.map(({ answer, title }) => (
+					<QuestionItem answer={answer} title={title} />
+				))}
+				{/* <div class="question-item">
                     <div class="q-title" id="q-title-1">Чому варто стати ІТ - спеціалістом?</div>
                     <div class="q-answer" id="q-answer-1">
                         ІТ-індустрія – один з найперспективніших напрямків роботи на сьогодні, 
@@ -77,11 +82,10 @@ const QuestionsBar = (props) =>{
                         з місцевих компаній,  якщо у вас достатній рівень знань, то ви отримаєте 
                         шанс працевлаштуватися в одну із цих ІТ - компаній.
                     </div>
-                </div>
-            </div>
-    </section>
-    )
-}
-
+                </div> */}
+			</div>
+		</section>
+	);
+};
 
 export default QuestionsBar;

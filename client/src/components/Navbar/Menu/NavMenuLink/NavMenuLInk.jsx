@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NavMenuLink.scss';
 
-const NavMenuLink = ({ link: { link, linkName }, isActive }) => {
+const NavMenuLink = ({ link: { link, linkName }, isActive ,setDropDownOpen}) => {
 	const navigate = useNavigate();
 
 	const handleNavigate = () => {
@@ -12,7 +12,7 @@ const NavMenuLink = ({ link: { link, linkName }, isActive }) => {
 	const activeStyle = isActive ? 'active_nav_link' : null;
 
 	return (
-		<div className={`nav_menu_link ${activeStyle}`} onClick={handleNavigate}>
+		<div onClick={()=>{handleNavigate();setDropDownOpen(false)}} className={`nav_menu_link ${activeStyle}`}>
 			{linkName}
 		</div>
 	);

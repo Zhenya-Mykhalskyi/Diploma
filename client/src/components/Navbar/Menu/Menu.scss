@@ -8,7 +8,6 @@
 		}
 		.menu_list {
 			top: 20px;
-			display: none;
 			width: 200px;
 			position: relative;
 			margin-top: 3px;
@@ -18,11 +17,11 @@
 			background-color: #1c1c1c;
 		}
 	}
-	.nav_menu_trigger:hover {
+	/* .nav_menu_trigger:hover {
 		.menu_list {
 			display: block;
 		}
-	}
+	} */
 }
 
 
