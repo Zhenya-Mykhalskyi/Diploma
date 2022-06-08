@@ -4,18 +4,18 @@ import './Navbar.scss';
 
 const Navbar = () => {
 	return (
-		<section class='nav-section'>
-			<nav class='nav'>
-				<div class='nav-logo'>
+		<section className='nav-section'>
+			<nav className='nav'>
+				<div className='nav-logo'>
 					<a href='index.html'>
 						<img src='Images\menu\navlogo.png' alt='' srcset='' />
 					</a>
 				</div>
-				<div class='nav-lang'>
+				<div className='nav-lang'>
 					{/* <div class='ukr'>UK</div>
 					<div class='eng'>ENG</div> */}
 				</div>
-				<div class='nav-contacts'>
+				<div className='nav-contacts'>
 					<img
 						src='Images\menu\call1.png'
 						alt=''
@@ -23,7 +23,7 @@ const Navbar = () => {
 						width='15px'
 						height='12.5px'
 					/>
-					<div class='contact-number'>+38 0352 28 19 66</div>
+					<div className='contact-number'>+38 0352 28 19 66</div>
 				</div>
 				<div className='nav-menu'>
 					<Menu />
