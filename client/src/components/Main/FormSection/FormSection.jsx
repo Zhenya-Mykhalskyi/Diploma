@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import './FormSection.scss';
 
 const FormSection = (props) => {
@@ -16,7 +17,7 @@ const FormSection = (props) => {
                         <input class="input" type="tel" placeholder="Телефон" required />
                         <div class="cheackbox-div">
                             <input type="checkbox" class="checkbox" required />
-                            <label class="checkbox-label">Я погоджуюсь з умовами <a href="Pages/privacy_policy.html" target="_blank">політики конфіденційності</a></label>
+                            <label class="checkbox-label">Я погоджуюсь з умовами <NavLink to='/privacypolicy' target="_blank">політики конфіденційності.</NavLink></label>
                         </div>
                         <button type="submit" class="form-button">Відправити</button>
                     </form>

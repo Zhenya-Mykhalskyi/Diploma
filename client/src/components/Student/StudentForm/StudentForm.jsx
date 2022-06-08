@@ -1,5 +1,6 @@
 import React from "react";
 import'./StudentForm.scss';
+import { NavLink } from "react-router-dom";
 
 const StudentForm = (props) => {
     return (
@@ -14,7 +15,7 @@ const StudentForm = (props) => {
                 <input type="text" class="form-input" placeholder="Керівник диплому"/>
                 <div class="check-the-policy">
                     <input type="checkbox" name="" id="" class=""/>
-                    <div>Я погоджуюсь з умовами<a href="">Політики конфіденційності</a></div>
+                    <div>Я погоджуюсь з умовами<NavLink to='/privacypolicy' target="_blank">політики конфіденційності</NavLink></div>
                 </div>
                 <input type="submit" value="Відправити" class="submit-button"/>
             </form>

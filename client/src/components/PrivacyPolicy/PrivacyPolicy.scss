@@ -1,0 +1,49 @@
+.pp-container{
+    width: 900px;
+    display: block;
+    margin:0 auto;
+}
+
+.pp-wrapper{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(207, 207, 207);
+    background-color: rgb(23, 23, 23);
+    line-height: 1.5;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 20px;
+}
+
+.content{
+    text-align: justify;
+    padding-bottom: 40px;
+}
+/* 768-992 */
+@media screen and (max-width:992px){
+	.container{
+		width: 720px;
+	}
+} 
+
+/* 576-768 */
+@media screen and (max-width:768px){
+	.container{
+		width: 540px;
+	}
+
+} 
+/* 320-576 */
+@media screen and (max-width:576px){
+	.container{
+	width: 90%;
+	}
+} 

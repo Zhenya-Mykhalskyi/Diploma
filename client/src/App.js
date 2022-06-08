@@ -8,6 +8,7 @@ import {
 	Applicant,
 	AboutUs,
 	Contacts,
+	PrivacyPolicy,
 } from './components';
 import './App.css';
 
@@ -23,6 +24,7 @@ const App = () => {
 				<Route path='/abiturient' element={<Applicant />} />
 				<Route path='/about' element={<AboutUs />} />
 				<Route path='/contacts' element={<Contacts />} />
+				<Route path='/privacypolicy' element={<PrivacyPolicy />} />
 			</Routes>
 			
 			<Footer />

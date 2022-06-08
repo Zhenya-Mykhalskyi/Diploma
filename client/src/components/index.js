@@ -6,5 +6,6 @@ import Applicant from './Applicant/Applicant';
 import AboutUs from './AboutUs/AboutUs';
 import Contacts from './Contacts/Contacts';
 import QuestionItem from './QuestionItem/QuestionItem';
+import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
 
-export { Student, Navbar, Main, Footer, Applicant, AboutUs, Contacts, QuestionItem };
+export { Student, Navbar, Main, Footer, Applicant, AboutUs, Contacts, QuestionItem, PrivacyPolicy };

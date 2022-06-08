@@ -12,8 +12,8 @@ const Navbar = () => {
 					</a>
 				</div>
 				<div class='nav-lang'>
-					<div class='ukr'>UK</div>
-					<div class='eng'>ENG</div>
+					{/* <div class='ukr'>UK</div>
+					<div class='eng'>ENG</div> */}
 				</div>
 				<div class='nav-contacts'>
 					<img
