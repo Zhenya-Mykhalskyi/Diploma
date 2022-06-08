@@ -1,6 +1,7 @@
 import React from "react";
 import FormSection from "../Main/FormSection/FormSection";
 import QuestionsBar from "../Main/QuestionsBar/QuestionsBar";
+import QuestionItem from "../QuestionItem/QuestionItem";
 import './Applicant.scss';
 import Reviews from "./Reviews/Reviews";
 import Skills from "./Skills/Skills";
