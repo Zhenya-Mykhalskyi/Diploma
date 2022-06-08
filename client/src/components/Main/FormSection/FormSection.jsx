@@ -4,40 +4,40 @@ import './FormSection.scss';
 
 const FormSection = (props) => {
     return (
-        <section class="form-section">
-            <div class="container">
-                <div class="formtitle ">
-                    <p class="form-intro">Для отримання повідомлення  про день відкритих дверей введіть, будь ласка, дані.</p>
+        <section className="form-section">
+            <div className="container">
+                <div className="formtitle ">
+                    <p className="form-intro">Для отримання повідомлення  про день відкритих дверей введіть, будь ласка, дані.</p>
                 </div>
 
-                <div class="formWrapper">
-                    <form action="#" class="form">
-                        <input class="input" type="text" placeholder="ПІБ" required />
-                        <input class="input" type="email" placeholder="E-mail" required />
-                        <input class="input" type="tel" placeholder="Телефон" required />
-                        <div class="cheackbox-div">
-                            <input type="checkbox" class="checkbox" required />
-                            <label class="checkbox-label">Я погоджуюсь з умовами <NavLink to='/privacypolicy' target="_blank">політики конфіденційності.</NavLink></label>
+                <div className="formWrapper">
+                    <form action="#" className="form">
+                        <input className="input" type="text" placeholder="ПІБ" required />
+                        <input className="input" type="email" placeholder="E-mail" required />
+                        <input className="input" type="tel" placeholder="Телефон" required />
+                        <div className="cheackbox-div">
+                            <input type="checkbox" className="checkbox" required />
+                            <label className="checkbox-label">Я погоджуюсь з умовами <NavLink to='/privacypolicy' target="_blank">політики конфіденційності.</NavLink></label>
                         </div>
-                        <button type="submit" class="form-button">Відправити</button>
+                        <button type="submit" className="form-button">Відправити</button>
                     </form>
 
-                    <div class="address-contacts">
-                        <div class="form-address ">
-                            <h3 class="contact-title">Наша адреса:</h3>
-                            <p class="contact-intro">Вулиця Леся Курбаса, 13, Тернопіль, Тернопільська область, 46016</p>
+                    <div className="address-contacts">
+                        <div className="form-address ">
+                            <h3 className="contact-title">Наша адреса:</h3>
+                            <p className="contact-intro">Вулиця Леся Курбаса, 13, Тернопіль, Тернопільська область, 46016</p>
                         </div>
 
-                        <div class="form-contacts">
-                            <h3 class="contact-title">Контакти:</h3>
-                            <div class="contact">
-                                <p class=" contacttext"> <img src="Images/Section5/whitephone.png" alt="phone" class="form-img" />+38 0352 28 19 66</p>
+                        <div className="form-contacts">
+                            <h3 className="contact-title">Контакти:</h3>
+                            <div className="contact">
+                                <p className=" contacttext"> <img src="Images/Section5/whitephone.png" alt="phone" className="form-img" />+38 0352 28 19 66</p>
                             </div>
-                            <div class="contact">
-                                <p class="contacttext"><img src="Images/Section5/whitephone.png" alt="phone" class="form-img" />0352 281 811</p>
+                            <div className="contact">
+                                <p className="contacttext"><img src="Images/Section5/whitephone.png" alt="phone" className="form-img" />0352 281 811</p>
                             </div>
-                            <div class="contact">
-                                <p class="contacttext"><img src="Images/Section5/mail.png" alt="phone" class="form-img mail-img" />cs@tk.te.ua</p>
+                            <div className="contact">
+                                <p className="contacttext"><img src="Images/Section5/mail.png" alt="phone" className="form-img mail-img" />cs@tk.te.ua</p>
                             </div>
                         </div>
                     </div>

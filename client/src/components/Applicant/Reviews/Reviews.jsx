@@ -3,17 +3,17 @@ import './Reviews.scss';
 
 const Reviews = (props) => {
     return (
-        <section class="reviews">
-            <div class="container">
-                <div class="reviews-title">
+        <section className="reviews">
+            <div className="container">
+                <div className="reviews-title">
                     Відгуки колишніх студентів
                     <hr />
                 </div>
-                <div class="FirstAndSecondReviews">
-                    <div class="firstreview">
+                <div className="FirstAndSecondReviews">
+                    <div className="firstreview">
                         <img src="Images/ApplicantImages/1photo.png" alt="" />
-                        <h3 class="review-title">Кучма Олександр</h3>
-                        <p class="review-text">Сьогодні я фахівець ІТ компанії і цьому завдячую
+                        <h3 className="review-title">Кучма Олександр</h3>
+                        <p className="review-text">Сьогодні я фахівець ІТ компанії і цьому завдячую
                             Технічному коледжу, який дав мені хороші знання та <span>допоміг знайти
                                 мені роботу.</span> Перш за все, хочу відмітити хороших, веселих викладачів,
                             їхнє бажання вкладати свої знання та професіоналізм у молодь.
@@ -24,10 +24,10 @@ const Reviews = (props) => {
                             Після завершення виробничої практики, на яку нас направив коледж, мене <span> запросили працювати у продуктову ІТ компанію.</span>
                             Коледж дав багато можливостей для розвитку та майбутнього, тому я досить задоволений.</p>
                     </div>
-                    <div class="firstreview secondreview">
+                    <div className="firstreview secondreview">
                         <img src="Images/ApplicantImages/2photo.png" alt="" />
-                        <h3 class="review-title">Цимбрак Назар</h3>
-                        <p class="review-text">ВСП “ТФК ТНТУ” дав мені дуже хорошу базу по моїй спеціальності
+                        <h3 className="review-title">Цимбрак Назар</h3>
+                        <p className="review-text">ВСП “ТФК ТНТУ” дав мені дуже хорошу базу по моїй спеціальності
                             оскільки, ще, не закінчивши навчання, <span>я зміг влаштуватися в одну з ІТ
                                 компаній Тернополя</span> і так почати свою кар’єру, до речі,  в цю компанію нас
                             водили групою на екскурсію, де я заради цікавості вирішив подати своє резюме,

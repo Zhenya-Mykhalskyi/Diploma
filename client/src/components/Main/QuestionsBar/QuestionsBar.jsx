@@ -5,9 +5,9 @@ import './QuestionsBar.scss';
 
 const QuestionsBar = () => {
 	return (
-		<section class='questions-bar-section'>
-			<div class='question-bar wow fadeInUp' data-wow-duration='2s'>
-				<div class='question-bar-title'>Найпоширеніші запитання:</div>
+		<section className='questions-bar-section'>
+			<div className='question-bar wow fadeInUp' data-wow-duration='2s'>
+				<div className='question-bar-title'>Найпоширеніші запитання:</div>
 				{QuestionsConstants.map(({ answer, title }) => (
 					<QuestionItem key={title.split(' ')} answer={answer} title={title} />
 				))}

@@ -10,11 +10,11 @@ const QuestionItem = ({ title, answer }) => {
 	};
 
 	return (
-		<div class='question-item' onClick={handleClick}>
-			<div class='q-title' id='q-title-1'>
+		<div className='question-item' onClick={handleClick}>
+			<div className='q-title' id='q-title-1'>
 				{title}
 			</div>
-			<div class={`q-answer ${open ? 'display_answer' : 'hide_answer'}`} id='q-answer-1'>
+			<div className={`q-answer ${open ? 'display_answer' : 'hide_answer'}`} id='q-answer-1'>
 				{answer}
 			</div>
 		</div>

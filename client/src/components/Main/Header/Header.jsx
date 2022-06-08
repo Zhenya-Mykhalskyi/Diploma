@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
     return (
-        <header class = "headerWrapper">
-        <div class="container">
-            <div class="wrapper">
-                <div class="offer">
-                    <h1 class="title">Комп'ютерні науки</h1>
-                    <p class="intro">Спеціальність, яка дозволить тобі здобути професію мрії. Вступай у ВСП «ТФК ТНТУ» та розкривай свій потенціал!
+        <header className = "headerWrapper">
+        <div className="container">
+            <div className="wrapper">
+                <div className="offer">
+                    <h1 className="title">Комп'ютерні науки</h1>
+                    <p className="intro">Спеціальність, яка дозволить тобі здобути професію мрії. Вступай у ВСП «ТФК ТНТУ» та розкривай свій потенціал!
                     </p>
                     <NavLink to='/abiturient' className="btn">Детальніше</NavLink>
                 </div>

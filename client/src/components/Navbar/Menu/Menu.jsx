@@ -51,7 +51,7 @@ const Menu = () => {
 						/>
 					</div>
 					{dropDownOpen ? (
-						<div class='menu_list'>
+						<div className='menu_list'>
 							{menuLinks.map(link => (
 								<NavMenuLink
 									key={link.link}

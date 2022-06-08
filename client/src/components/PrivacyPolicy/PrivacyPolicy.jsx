@@ -4,10 +4,10 @@ import './PrivacyPolicy.scss';
 
 const PrivacyPolicy  = () => {
     return (
-    <div class="pp-wrapper">
+    <div className="pp-wrapper">
         <div className="pp-container">
-        <div class="title">Політика конфіденційності</div>
-        <div class="content">
+        <div className="title">Політика конфіденційності</div>
+        <div className="content">
             Цей документ описує політику конфіденційності для сайту kompnauki.com (далі – Сайт) Циклової комісії комп'ютерних наук ВСП «ТФК ТНТУ».  <br/>
             У ньому роз’яснюється, які види інформації можуть бути зібрані і зберігатися на Сайті, та як може використовуватися і надаватися ця інформація.<br/><br/>
             <b>Збір та використання персональних даних.</b> <br/>

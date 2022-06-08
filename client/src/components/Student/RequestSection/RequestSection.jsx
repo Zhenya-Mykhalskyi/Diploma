@@ -3,15 +3,15 @@ import'./RequestSection.scss';
 
 const RequestSection = (props) => {
     return (
-        <section class="request-topics-section">
-        <form action="" class="form">
-            <div class="this-title">
+        <section className="request-topics-section">
+        <form action="" className="form">
+            <div className="this-title">
                 Щоб отримати список тем дипломних натисніть кнопку нижче
             </div>
-            {/* <div class="input-year">
-                <input type="number" name="" id="" class="form-input" placeholder="Рік захисту"/>
+            {/* <div className="input-year">
+                <input type="number" name="" id="" className="form-input" placeholder="Рік захисту"/>
             </div> */}
-            <input type="submit" value="Отримати" class="submit-btn"/>
+            <input type="submit" value="Отримати" className="submit-btn"/>
         </form>
     </section>
     )
