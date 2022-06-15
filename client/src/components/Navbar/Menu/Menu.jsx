@@ -28,7 +28,6 @@ const Menu = () => {
 			setCurrentRoute(thisRoute);
 		}
 	};
-	console.log(dropDownOpen);
 
 	useEffect(() => {
 		document.title = currentRoute;

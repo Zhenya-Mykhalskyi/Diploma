@@ -4,11 +4,16 @@ const cors = require("cors");
 
 const { checkConnect } = require("./src/database");
 const { PORT } = require("./src/config/config");
-const { userRouter } = require("./src/routes");
+const userRouter  = require("./src/router/mainRouter");
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+	origin: 'http://localhost:3000',
+	credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

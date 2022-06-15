@@ -7,6 +7,7 @@ const {
   DB_NAME,
 } = require("../config/config");
 const createUserModel = require("./userModel");
+const createGraduateWorkModel = require("./graduateWorkModel");
 
 const sequelize = new Sequelize(DB_NAME, DB_LOGIN, DB_PASSWORD, {
   host: DB_HOST,
@@ -14,6 +15,7 @@ const sequelize = new Sequelize(DB_NAME, DB_LOGIN, DB_PASSWORD, {
 });
 
 const Users = createUserModel(sequelize);
+const GraduateWork = createGraduateWorkModel(sequelize);
 
 const checkConnect = async () => {
   try {
@@ -36,4 +38,5 @@ const checkConnect = async () => {
 module.exports = {
   checkConnect,
   Users,
+  GraduateWork,
 };
