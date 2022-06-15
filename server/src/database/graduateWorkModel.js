@@ -27,7 +27,6 @@ const createGraduateWorkModel = orm => {
       leader: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
       },
     },
     {

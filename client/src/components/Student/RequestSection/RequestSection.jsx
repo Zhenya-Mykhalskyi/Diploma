@@ -22,7 +22,7 @@ const RequestSection = props => {
 
 	return (
 		<section className='request-topics-section'>
-			<div>
+			<div className='form'>
 				<div className='this-title'>
 					Щоб отримати список тем дипломних натисніть кнопку нижче
 				</div>
@@ -35,12 +35,21 @@ const RequestSection = props => {
 			</div>
 
 			{show ? (
-				<div>
-					<div>Count ---- {count}</div>
+				<div className='diploma-themes'>
+					<div>Кількість тем ---- {count}</div>
 					<div>
 						{themes.map(theme => (
-							<div key={theme.name} style={{ margin: '20px', border: '1px solid red' }}>
-								{theme.name} {theme.year}
+							<div className='diploma-themes-item' key={theme.name}>
+								<div>
+									ПІБ:  {theme.name}
+								</div>
+								<div>	
+									Рік захисту: {theme.year}
+								</div>
+								<div>
+									Тема:  {theme.theme}
+								</div>
+								    
 							</div>
 						))}
 					</div>

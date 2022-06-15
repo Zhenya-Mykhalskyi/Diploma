@@ -6,6 +6,7 @@
 
 .request-topics-section{
     background-color: #002831;
+    padding-bottom: 30px;
     .form{
         padding-top: 50px;
         margin: 0px auto 0px auto;
@@ -62,6 +63,17 @@
             box-shadow: 0 -2px 20px 14px rgba(27, 27, 27, 0.15);
             cursor: pointer;
         }
+    }
+}
+
+.diploma-themes{
+    color:#fcffff;
+    padding: 0px 20px;
+
+    .diploma-themes-item{
+        border: #ece6e6 1px solid;
+        margin-top: 25px;
+        padding: 7px;
     }
 }
 
