@@ -14,8 +14,8 @@ const StudentForm = (props) => {
                 <input type="text" className="form-input" placeholder="Тема диплому"/>
                 <input type="text" className="form-input" placeholder="Керівник диплому"/>
                 <div className="check-the-policy">
-                    <input type="checkbox" name="" id="" className=""/>
-                    <div>Я погоджуюсь з умовами<NavLink to='/privacypolicy' target="_blank">політики конфіденційності</NavLink></div>
+                    <input type="checkbox" name="" id="" className="" required/>
+                    <div>Я погоджуюсь з умовами<NavLink to='/privacypolicy' target="_blank">політики конфіденційності.</NavLink></div>
                 </div>
                 <input type="submit" value="Відправити" className="submit-button"/>
             </form>
