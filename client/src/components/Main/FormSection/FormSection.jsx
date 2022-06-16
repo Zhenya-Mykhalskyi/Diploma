@@ -5,6 +5,7 @@ import Fetch from '../../../Utils/FetchService';
 import UserValidationSchema from '../../../Utils/UserValidationSchema';
 import './FormSection.scss';
 
+
 const FormSection = props => {
 	const formik = useFormik({
 		initialValues: {
@@ -13,14 +14,6 @@ const FormSection = props => {
 			phone: '',
 		},
 		validationSchema: UserValidationSchema,
-		// onSubmit: async values => {
-		// 	console.log('SUBMIT --> ', values);
-		// 	const { data, status, errMessage } = await Fetch('/create', 'POST', values);
-		// 	console.log(data);
-		// 	if (!status) {
-		// 		alert(errMessage);
-		// 	}
-		// },
 	});
 
 	const handleSubmit = async values => {
