@@ -23,6 +23,7 @@ const FormSection = props => {
 		if (!status) {
 			alert(errMessage);
 		}
+		formik.resetForm();
 	};
 
 	return (
@@ -49,7 +50,7 @@ const FormSection = props => {
 						/>
 						<input
 							className='input'
-							type='text'
+							type='email'
 							placeholder='E-mail'
 							required
 							name='email'
@@ -59,7 +60,7 @@ const FormSection = props => {
 						/>
 						<input
 							className='input'
-							type='text'
+							type='tel'
 							placeholder='Телефон'
 							required
 							name='phone'
