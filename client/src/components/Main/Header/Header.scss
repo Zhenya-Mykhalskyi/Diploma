@@ -34,8 +34,8 @@ header {
 }
 
 
-.title{
-  font-size: 30px;
+.header-title{
+  font-size: 25px;
   font-weight: 900;
   line-height: 1.39;
   letter-spacing: 2.1px;
@@ -199,7 +199,7 @@ END HEADER END HEADER END HEADER END HEADER END HEADER END HEADER */
     width: 305px;
   }
 
-  .title{
+  .header-title{
     width: 90%;
     margin: 0 auto;
   }
@@ -207,7 +207,7 @@ END HEADER END HEADER END HEADER END HEADER END HEADER END HEADER */
   .intro{
     width: 90%;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   input{
